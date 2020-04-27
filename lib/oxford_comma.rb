@@ -6,8 +6,7 @@ def oxford_comma(array)
     array.join(" and ")
       # formats (a and b) when 2 element array
   elsif array.length > 2 
-    array.insert 2
-    array.last << "and ".split(", ") 
+    array.last.insert(0, " and ")  
       # formats (a, b, and c) when 3 element array or longer
   
 end
