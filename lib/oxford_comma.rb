@@ -7,7 +7,7 @@ def oxford_comma(array)
       # formats (a and b) when 2 element array
   elsif array.length > 2 
     array.insert 2
-    array << "and ".split(", ") 
+    array.last << "and ".split(", ") 
       # formats (a, b, and c) when 3 element array or longer
   
 end
